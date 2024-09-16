@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/loginprof.css">
+
+    <title>SISRAM</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #1C1E5C;
+            font-family: 'roboto', sans-serif;
+        }
+
+        .login-container {
+            background-color: #f6f9fa;
+            padding: 80px 40px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: -46px;
+            margin-left: 20px;
+            width: 130px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        form {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        input,
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 18px;
+            box-sizing: border-box;
+            height: 50px;
+        }
+
+        button {
+            background-color: 1C1E5C;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #00005A;
+        }
+
+        a {
+            background-color: #00005A;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            box-sizing: border-box;
+            height: 50px;
+            background-color: #5e3bee;
+            color: #fff;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            line-height: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-btn:hover {
+            background-color: #0056b3;
+        }
+
+
+        .forgot-password {
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 10px;
+            text-align: center;
+            display: block;
+            background-color: #f6f9f6;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .criar-conta {
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 10px;
+            text-align: center;
+            display: block;
+            background-color: #f6f9f6;
+        }
+
+        .criar-conta:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="/views/Logo_Escola/logoGP.png" alt="imgescola">
+    </header>
+    <div class="login-container">
+        <h2>Login do professor</h2>
+        <form id="login-form">
+            <label for="matricula">Matrícula:</label>
+            <input type="text" id="matricula" name="matricula" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" class="login-btn"><a href="/serie_prof"></a>ENTRAR</button>
+            <a href="/esquecisenha_p" class="forgot-password">Esqueci a senha</a>
+            <a href="/criarcont_prof" class="criar-conta">Criar uma conta</a>
+        </form>
+    </div>
+</body>
+</head>
+
+</html>

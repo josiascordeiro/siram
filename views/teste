@@ -1,0 +1,30 @@
+<% if (results) { %>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Matrícula</th>
+                        <th>Data de Afastamento</th>
+                        <th>Período</th>
+                        <th>Curso</th>
+                        <th>Turma</th>
+                        <th>Atestado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% results.forEach(function(cliente) { %>
+                        <tr>
+                            <td><%= cliente.id %></td>
+                            <td><%= cliente.matricula %></td>
+                            <td><%= cliente.data_afast %></td>
+                            <td><%= cliente.periodo %></td>
+                            <td><%= cliente.curso %></td>
+                            <td><%= cliente.turma %></td>
+                            <td><img src="<%= cliente.img_ates %>" alt="Atestado"></td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        <% } else { %>
+            <p>Nenhum resultado encontrado.</p>
+        <% } %>

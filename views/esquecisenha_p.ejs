@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISRAM</title>
+    <link rel="stylesheet" href="/css/esquecisenha_p.css">
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #1C1E5C;
+        font-family: 'roboto', sans-serif;
+    }
+
+    .login-container {
+        background-color: #f6f9fa;
+        padding: 6px 40px;
+        border-radius: 8px;
+        width: 80%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: -46px;
+        margin-left: 20px;
+        width: 130px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    label {
+        margin-bottom: 8px;
+    }
+
+    input,
+    button {
+        width: 100%;
+        padding: 14px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 18px;
+        box-sizing: border-box;
+        height: 50px;
+    }
+
+    button {
+        background-color: 1C1E5C;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #00005A;
+    }
+
+    a {
+        background-color: #00005A;
+    }
+
+    .login-btn {
+        width: 100%;
+        padding: 14px;
+        margin-bottom: 12px;
+        border: none;
+        border-radius: 4px;
+        font-size: 18px;
+        box-sizing: border-box;
+        height: 50px;
+        background-color: #5e3bee;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        line-height: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-btn:hover {
+        background-color: #0056b3;
+    } 
+
+      .links{
+        display: flex;
+        gap: 100px;
+        position: absolute;
+        top: 560px; /* Distância do topo */
+        left: 51%;
+        transform: translateX(-58%);
+      }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <img src="/9998877665554433221100/views/Logo_Escola/logoGP.png" alt="img escola">
+        <hr>
+            </header>
+
+    <section> 
+        <div class = "login-container">
+          <h2>Recuperar senha</h2>
+          <label for="loginProfessor">Informe o seu login:</label>
+          <input type="text" id="loginProfessor" name="loginProfessor" placeholder="Informe o Login"/>
+          <label for="email">Informe o seu email:</label>
+          <input type="text" id="emailProfessor" name="emailProfessor" placeholder="Informe o Email"> 
+          <label for="novaSenha">Informe a sua nova senha:</label>
+          <input type="text" id="novaSenha" name="novaSenha" placeholder="Informe a Senha"> 
+          <label for="confirmeSenha">Confirme a sua senha:</label>
+          <input type="text" id="confirmeSenha" name="novaSenha" placeholder="Confirme a Senha">   
+          <button type="submit" class="login-btn"><a href="/serie_prof"></a>ENTRAR</button>
+    </section>
+
+    <footer>
+        <div class="links">
+            <div id="cont">
+              <a href="/login"><input type="button" value="Continuar"></a>
+            </div>
+            <div id="volt">
+              <a href="/"><input type="button" value="Voltar"></a>
+            </div>
+        </div>
+      </footer> 
+    </body>
+    
+</html>

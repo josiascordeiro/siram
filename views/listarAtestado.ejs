@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title><% title %></title>
+            <link rel="stylesheet" href="/stylesheeets/style.css">
+</head>
+<body>
+            <h1>Listagem de Atestados</h1>
+            <p>Atestados Cadastrados no sistema</p>
+
+            <table style="width: 50">
+                        <thead>
+                                    <tr style="background-color: #ccc;">
+                                                <th>ID</th>
+                                                <th>Matrícula</th>
+                                                <th>Nome do Aluno</th>
+                                                <th>Curso</th>
+                                                <th>Turma</th>
+                                                <th>Data de Afastamento</th>
+                                                <th>Período</th>
+                                                <th>Imagem do Atestado</th>
+                                                <th>Ações</th>
+                                    </tr>
+                        </thead>
+                        <tbody>
+                        <% if(!atestados || atestados.length == 0)
+                        {%>
+                                    <tr>
+                                                <td colspan="8">Nenhum Cliente Cadastrado</td>
+                                    </tr>
+                        <% } else { 
+                                     atestados.forEach(function(enviar_atestado) { %>
+                                                <tr>
+                                                    <td><%= enviar_atestado.id %></td>
+                                                    <td><%= enviar_atestado.matricula %></td>
+                                                    <td><%= enviar_atestado.nome %></td>
+                                                    <td><%= enviar_atestado.curso %></td>
+                                                    <td><%= enviar_atestado.turma %></td>
+                                                    <td><%= enviar_atestado.data_afast %></td>
+                                                    <td><%= enviar_atestado.periodo %></td>
+                                                    <td><img src="<%= enviar_atestado.img_atest %>" alt="Atestado"></td>
+                                                    <td>
+                                                        <a href="/editar/<%= enviar_atestado.id %>">Editar</a> 
+                                                        <a href="/deletar/<%= enviar_atestado.id %>" onclick="return confirm('Deseja realmente excluir o atestado?')">Deletar</a>
+                                                    
+
+                                                        
+                                                   
+                                                   
+                                                </tr>
+                                            <% }) 
+                                            }%>
+                                        </tbody>
+                                    </table>
+                              
+                        </tbody>
+
+            </table>
+            
+</body>
+</html>
+
+
+
+
+

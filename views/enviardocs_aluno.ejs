@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/enviardocs_a.css">
+    <title>SISRAM</title>
+
+    <style>
+        body{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0; 
+    }
+    header{
+      background-color: rgb(53, 53, 255);
+    }
+    h1{
+      color: white;
+      background-color: rgb(53, 53, 255);
+      text-align: center;
+      font-size: 70px;
+    }
+    section{
+      align-items: center;
+      text-align: center;
+    }
+</style>
+
+</head>
+<body>
+    <h1>ETE-Ginásio Pernambucano</h1>
+    <hr>
+    <h2>SISRAM - Enviar documentos/atestados</h2>   
+    Matrícula <br><input type="text" name="nome do aluno" id="">
+    <br><BR>
+
+    Data de Afastamento <br><input type="date" name="data afastamento" id="">
+    <br>
+   <BR>
+    Período <br><input type="text" name="Manhã/Tarde" id="">
+    <p>Coloque a imagem do atestado abaixo</p>
+    <label class="picture" tabindex="0">
+        <input type="file" accept="image/*" class="picture__input"/>
+        <span class="picture__image"></span>
+    </label>
+    <br>
+    <br> <a href="/">sair</a><br>
+    <br>
+    <a href="/conclusao">Enviar</a>
+    <script>
+        window.alert("Página de enviar atestado")
+    </script>
+
+<footer>
+  <div class="links">
+      <div id="cont">
+        <a href="/login"><input type="button" value="Continuar"></a>
+      </div>
+      <div id="volt">
+        <a href="/"><input type="button" value="Voltar"></a>
+      </div>
+  </div>
+</footer> 
+
+</body>
+</html>

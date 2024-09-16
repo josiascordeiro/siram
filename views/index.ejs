@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TERMINADO -->
+  <style>
+    body{
+      font-family: 'roboto', sans-serif;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0; 
+    }
+    header{
+      background-color: #1c1e53;
+    }
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: -46px;
+        margin-left: 20px;
+        width: 130px;
+    }
+    h1{
+      color: white;
+      margin-top: 0px;
+      background-color: #1c1e53;
+      text-align: center;
+      font-size: 70px;
+    }
+    section{
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center;
+      text-align: center;
+    }
+    .conteiner{
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Centraliza as divs horizontalmente */
+      gap: 220px;
+    }   
+    .aluno, .professor{
+      text-transform: uppercase; 
+      font: normal 40px 'roboto', sans-serif    ;
+      color: white;
+      background-color: #1c1e53;  
+      padding: 60px 60px;
+      border-radius: 0.24rem;  
+      transition:  transform 50ms,  box-shadow 50ms;
+    }
+  </style>
+  <title>SISRAM</title> 
+</head>
+<body>
+  <header>
+    <img src="/views/Logo_Escola/logoGP.png" alt="imgescola">
+    <h1>SISRAM</h1 id='titulo'>
+    <hr>
+  </header>  
+  <section>
+    <div class="conteiner">
+      <div id="aluno">
+        <a href="/login"><input type="button" value="aluno" class="aluno"></a>
+      </div>
+      <div id="professor">
+        <a href="/loginprof"><input type="button" value="professor" class="professor"></a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

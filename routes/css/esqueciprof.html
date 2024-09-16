@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISRAM</title>
+    <link rel="stylesheet" href="/css/esquecisenha_p.css">
+
+    <style>
+        body{
+            font-family: 'roboto', sans-serif;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0; 
+        }
+        header {
+            background-color: #1c1e53;
+        }
+
+        h1 {
+            color: white;
+            background-color: #1c1e53;
+            text-align: center;
+            font-size: 70px;
+            font-family: 'roboto', sans-serif;
+        }
+
+        section {
+            align-items: center;
+            text-align: center;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: 0px;
+            margin-left: 20px;
+            width: 130px;
+        }
+
+        input {
+            font: normal 20px arial;
+            border-color: #1c1e53;
+            margin: 8px;
+            border-radius: 5px;
+        }
+
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 220px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <img src="/views/Logo_Escola/logoGP.png" alt="imgescola">
+        <h1>SISRAM</h1 id=titulo>
+        <hr>
+    </header>
+
+    <section>
+        <div class="input-container">
+            <label for="loginProfessor">Informe o seu login:</label>
+            <input type="text" id="loginProfessor" name="loginProfessor" placeholder="Informe o Login" /><br>
+        </div>
+
+        <div class="input-container">
+            <label for="email">Informe o seu email:</label>
+            <input type="text" id="emailProfessor" name="emailProfessor" placeholder="Informe o Email"> <br>
+        </div>
+
+        <div class="input-container">
+            <label for="novaSenha">Informe a sua nova senha:</label>
+            <input type="text" id="novaSenha" name="novaSenha" placeholder="Informe a Senha"> <br>
+        </div>
+
+        <div class="input-container">
+            <label for="confirmeSenha">Confirme a sua senha:</label>
+            <input type="text" id="confirmeSenha" name="novaSenha" placeholder="Confirme a Senha"> <br>
+        </div>
+    </section>
+
+    <footer>
+        <div class="links">
+            <div id="cont">
+                <a href="/login"><input type="button" value="Continuar"></a>
+            </div>
+            <div id="volt">
+                <a href="/"><input type="button" value="Voltar"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
