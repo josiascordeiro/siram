@@ -154,7 +154,29 @@ router.get('/listarAtestado', async function (req, res) {
     }
   });
  
+//Rota GET para listar somente a turma doisAds
+router.get('/doisAds', async function (req, res) {
+    try { const atestados2ads = await global.db.doisAds();
+      console.log(atestados2ads);
+    res.render('2-a-ds', { title: 'Atestados 2aDS', atestados2ads });
+    }
+    catch (e) {
+      console.log(e);
+      res.status(500).send({ message: e.message });
+    }
+  });
 
+
+  async function testDoisAds() {
+    try {
+        const result = await doisAds();
+        console.log(result);
+    } catch (e) {
+        console.error(e);
+    }
+}
+
+  // Definindo uma rota GET para enviar atestado
 
   
 

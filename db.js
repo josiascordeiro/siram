@@ -39,11 +39,36 @@ async function connect() {
 
 connect();
 
-//funcao para listar todos atestatados da tabela enviar_atestado
+//funcao para listar todos atestatados da tabela enviar_atestado  
 async function listarAtestado() { 
     const conn = await connect();
-    const [rows] = await conn.query('SELECT id,matricula,nome,curso, turma, data_afast, periodo, img_atest from enviar_atestado');
+    const [rows] = await conn.query('SELECT id,matricula,nome,curso, turma, data_afast, periodo, img_atest from enviar_atestado'); 
     return rows;
 }
 
-module.exports = {listarAtestado }
+async function doisAds() {
+    const conn = await connect();
+    console.log('Conexão estabelecida')
+    const [rows] = await conn.query('SELECT id,matricula,nome,curso, turma, data_afast, periodo, img_atest from enviar_atestado where turma = "2A" ');
+    console.log('Consulta executada', rows)
+    return rows;
+
+    
+}
+
+async function testDoisAds() {
+    try {
+        const result = await doisAds();
+        console.log(result);
+    } catch (e) {
+        console.error(e);
+    }
+}
+
+testDoisAds();
+
+//funçao para cadastrar atestado
+//async function cadastrarAtestado(matricula, nome, curso, turma, data_afast,periodo)
+
+
+module.exports = {listarAtestado,doisAds, testDoisAds }
